@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 2528540161
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 89e8294c0ef207a4fb1aa4b938bb121a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0f6d30d3fb0ec4b8b0dada7f0d131a97
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 512404a45b3faf14c99fd80311905d32, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 250
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Pusher.prefab
+- Assets/Sprites/Stickman Punch/Stickman Punch_00601.png
+Dependencies: []

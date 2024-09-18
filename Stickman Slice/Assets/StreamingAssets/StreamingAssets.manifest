@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 649304189
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: preview
+      Dependencies: {}
+    Info_1:
+      Name: anigaii
+      Dependencies: {}

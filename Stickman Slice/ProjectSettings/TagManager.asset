@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CAR
+  - MEAT
+  - GROUND
+  - TRIGGER
+  - BOBER
+  - BULLET
+  - USED
+  - GHOST
+  - BOARD
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - ARM
+  - TORSO
+  - LEG_L
+  - LEG_R
+  - ARM_R
+  - HEAD
+  - CAR
+  - TRIGGER
+  - DECORATION
+  - SUB DETAL
+  - BULLET
+  - STICKMAN
+  - SLICED
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: DECORATION
+    uniqueID: 3920251991
+    locked: 0
+  - name: MAIN
+    uniqueID: 1832267847
+    locked: 0

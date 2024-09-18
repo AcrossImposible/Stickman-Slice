@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 136380940
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ac059ada3290d7922d93aba567c9aca1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7a5be13ad9bbd8077671948c62cea9a1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 58
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 512404a45b3faf14c99fd80311905d32, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 250
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Pusher.prefab
+Dependencies: []

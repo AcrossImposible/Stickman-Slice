@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4cda5462ca377744f8d013003653f819
+timeCreated: 1506093668
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bloodSlice: {fileID: 1835929884847048, guid: f2bd01629cc0564408eff2a13cf2f7c1,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
