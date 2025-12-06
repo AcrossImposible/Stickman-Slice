@@ -139,6 +139,8 @@ namespace Appodeal.Unity.Editor.Utils
 
         private void AddAdmobAppId(string path, AndroidManifest androidManifest)
         {
+            string admobAppId = AppodealSettings.Instance.AdMobAndroidAppId;
+
             if (File.Exists(Path.Combine(Application.dataPath, "Plugins/Android/AndroidManifest.xml"))
                 && CheckContainsAppId(Path.Combine(Application.dataPath, "Plugins/Android/AndroidManifest.xml")))
             {
@@ -150,7 +152,7 @@ namespace Appodeal.Unity.Editor.Utils
                         "\nRemoving duplicate from internal Appodeal AndroidManifest.xml file.");
                     return;
                 }
-                else if (!string.IsNullOrEmpty(AppodealSettings.Instance.AdMobAndroidAppId))
+                else if (!String.IsNullOrEmpty(admobAppId))
                 {
                     Debug.LogWarning(
                         $"AdmobAppId has already been added to {Path.Combine(Application.dataPath, "Plugins/Android/AndroidManifest.xml")}" +
@@ -182,7 +184,7 @@ namespace Appodeal.Unity.Editor.Utils
                 return;
             }
 
-            if (string.IsNullOrEmpty(AppodealSettings.Instance.AdMobAndroidAppId))
+            if (String.IsNullOrEmpty(admobAppId))
             {
                 if (CheckContainsAppId(path))
                 {
@@ -194,7 +196,7 @@ namespace Appodeal.Unity.Editor.Utils
             }
             else
             {
-                if (!AppodealSettings.Instance.AdMobAndroidAppId.StartsWith("ca-app-pub-"))
+                if (!admobAppId.StartsWith("ca-app-pub-") || admobAppId == AppodealUnityUtils.AdMobAppIdPlaceholder)
                 {
                     Debug.LogError(
                         "Incorrect value. The app may crash on startup." +
@@ -203,11 +205,11 @@ namespace Appodeal.Unity.Editor.Utils
 
                 if (CheckContainsAppId(path))
                 {
-                    androidManifest.ChangeAdmobAppId(AppodealSettings.Instance.AdMobAndroidAppId);
+                    androidManifest.ChangeAdmobAppId(admobAppId);
                 }
                 else
                 {
-                    androidManifest.AddAdmobAppId(AppodealSettings.Instance.AdMobAndroidAppId);
+                    androidManifest.AddAdmobAppId(admobAppId);
                 }
             }
         }
@@ -570,7 +572,7 @@ namespace Appodeal.Unity.Editor.Utils
 
         public override void fixProblem()
         {
-            //EditorApplication.applicationContentsPath is different for macos and win. need to fix to reach manifest and gradle templates 
+            // EditorApplication.applicationContentsPath is different for macos and win. need to fix to reach manifest and gradle templates
             var defaultGradleTemplateFullName = MultidexActivator.getDefaultGradleTemplate();
 
             var destGradleScriptFullName = AppodealUnityUtils.combinePaths(Application.dataPath,
