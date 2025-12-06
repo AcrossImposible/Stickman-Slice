@@ -49,6 +49,7 @@ public class Game : MonoBehaviour {
 	public void Awake()
 	{
 		TargetPoint = CalculateTargetPoint();
+		Application.targetFrameRate = 60;
 	}
 
 	// Use this for initialization
